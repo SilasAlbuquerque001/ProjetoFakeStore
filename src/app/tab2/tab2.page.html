@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Detalhes do Produto
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngIf="product" class="product-detail">
+    <img [src]="product.image" [alt]="product.title" class="product-image">
+    
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ product.title }}</ion-card-title>
+        <ion-card-subtitle>{{ product.category }}</ion-card-subtitle>
+      </ion-card-header>
+      
+      <ion-card-content>
+        <p class="price">${{ product.price }}</p>
+        <p class="description">{{ product.description }}</p>
+        
+        <div class="rating">
+          <ion-icon name="star" color="warning"></ion-icon>
+          <span>{{ product.rating.rate }} ({{ product.rating.count }} avaliações)</span>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+  <div *ngIf="!product" class="no-product">
+    <ion-text>
+      <h2>Nenhum produto selecionado</h2>
+      <p>Volte para a lista de produtos e selecione um item.</p>
+    </ion-text>
+  </div>
+</ion-content>
+

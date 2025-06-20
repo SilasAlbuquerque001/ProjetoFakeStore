@@ -1,0 +1,84 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Sobre o Autor
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Sobre o Autor</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="author-info">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Informações do Desenvolvedor</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+        <ion-item>
+          <ion-icon name="person" slot="start"></ion-icon>
+          <ion-label>
+            <h3>Nome</h3>
+            <p>Silas Rafael Vieira de Albuquerque</p>
+          </ion-label>
+        </ion-item>
+        
+        <ion-item>
+          <ion-icon name="school" slot="start"></ion-icon>
+          <ion-label>
+            <h3>Curso</h3>
+            <p>Desenvolvimento para Dispositivos Móveis</p>
+          </ion-label>
+        </ion-item>
+        
+        <ion-item>
+          <ion-icon name="calendar" slot="start"></ion-icon>
+          <ion-label>
+            <h3>Data de Desenvolvimento</h3>
+            <p>{{ currentDate }}</p>
+          </ion-label>
+        </ion-item>
+        
+        <ion-item>
+          <ion-icon name="code-slash" slot="start"></ion-icon>
+          <ion-label>
+            <h3>Tecnologias Utilizadas</h3>
+            <p>Ionic, Angular, TypeScript</p>
+          </ion-label>
+        </ion-item>
+        
+        <ion-item>
+          <ion-icon name="globe" slot="start"></ion-icon>
+          <ion-label>
+            <h3>API Utilizada</h3>
+            <p>Fake Store API</p>
+          </ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Sobre o Projeto</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+        <p>
+          Este aplicativo foi desenvolvido como projeto de avaliação para a disciplina de 
+          Desenvolvimento para Dispositivos Móveis. O objetivo é demonstrar o uso do 
+          framework Ionic com Angular para criar um aplicativo que consome dados de uma API pública.
+        </p>
+        <p>
+          O aplicativo utiliza a Fake Store API para exibir uma lista de produtos e 
+          permite visualizar detalhes de cada produto selecionado.
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+

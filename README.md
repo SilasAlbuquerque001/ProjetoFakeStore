@@ -14,7 +14,7 @@ Silas Rafael Vieira de Albuquerque
 
 1- entrar no terminal do git bash dentro do editor de código
 2- usar o comando npm install para conseguir fazer a leitura dos arquivos 
-3-por último usar o comando ionic serve para colocar a aplicação para funcionar 
+3- por último usar o comando ionic serve para colocar a aplicação para funcionar 
 
 ## Licença
 
